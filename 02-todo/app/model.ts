@@ -8,7 +8,7 @@ export class Model {
       new TodoItem("By Flowers", false),
       new TodoItem("Get Shoes", false),
       new TodoItem("Collect Tickets", false),
-      new TodoItem("Call Joe", false)
+      new TodoItem("Call Joe", true)
     ]
   }
 }
