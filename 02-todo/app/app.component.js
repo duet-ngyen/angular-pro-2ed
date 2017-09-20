@@ -20,9 +20,9 @@ var AppComponent = (function () {
     AppComponent.prototype.getTodoItems = function () {
         return this.model.items.filter(function (item) { return !item.done; });
     };
-    AppComponent.prototype.addItem = function (newItem) {
+    AppComponent.prototype.addItem = function (newItem, location, done) {
         if (newItem != "") {
-            this.model.items.push(new model_1.TodoItem(newItem, false));
+            this.model.items.push(new model_1.TodoItem(newItem, location, done));
         }
     };
     AppComponent = __decorate([
