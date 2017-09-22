@@ -8,7 +8,16 @@ var otherName = new DuplicateName_1.Name();
 console.log(name.nameMessage);
 console.log(loc.WeatherMessage);
 console.log(otherName.message);
-var t = tempConverter_1.TempConverter.convertFtoC("12");
+var t = tempConverter_1.TempConverter.convertFtoC(38);
+console.log(t);
+var tuple;
+tuple = ["London", "raining", tempConverter_1.TempConverter.convertFtoC("38")];
+console.log("It is " + tuple[2] + " degrees C and " + tuple[1] + " in " + tuple[0]);
+var cities = {};
+cities["London"] = ["raining", tempConverter_1.TempConverter.convertFtoC("38")];
+for (var key in cities) {
+    console.log(key + " is " + cities[key][0] + " and temp about " + cities[key][1]);
+}
 // class MyClass{
 //   constructor(name, weather){
 //     this.name = name;
