@@ -1,5 +1,6 @@
 ﻿import * as NameAndWeatherLocation from "./modules/NameAndWeather"
 import {Name as OtherName} from "./modules/DuplicateName";
+import { TempConverter } from "./tempConverter";
 
 let name = new NameAndWeatherLocation.Name("duyet", "nguyen");
 let loc = new NameAndWeatherLocation.WeatherLocation("rain", "london");
@@ -8,6 +9,8 @@ let otherName = new OtherName();
 console.log(name.nameMessage);
 console.log(loc.WeatherMessage);
 console.log(otherName.message);
+
+let t = TempConverter.convertFtoC("12");
 
 // class MyClass{
 //   constructor(name, weather){

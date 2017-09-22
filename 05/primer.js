@@ -1,12 +1,14 @@
 "use strict";
 var NameAndWeatherLocation = require("./modules/NameAndWeather");
 var DuplicateName_1 = require("./modules/DuplicateName");
+var tempConverter_1 = require("./tempConverter");
 var name = new NameAndWeatherLocation.Name("duyet", "nguyen");
 var loc = new NameAndWeatherLocation.WeatherLocation("rain", "london");
 var otherName = new DuplicateName_1.Name();
 console.log(name.nameMessage);
 console.log(loc.WeatherMessage);
 console.log(otherName.message);
+var t = tempConverter_1.TempConverter.convertFtoC("12");
 // class MyClass{
 //   constructor(name, weather){
 //     this.name = name;
