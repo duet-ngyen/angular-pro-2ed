@@ -15,10 +15,10 @@ require("rxjs/add/observable/from");
 var StaticDataSource = (function () {
     function StaticDataSource() {
         this.products = [
-            new product_model_1.Product(1, "Product 1", "Category 1", "Product 1 (Category 1)", 100),
-            new product_model_1.Product(2, "Product 2", "Category 1", "Product 2 (Category 1)", 100),
-            new product_model_1.Product(3, "Product 3", "Category 1", "Product 3 (Category 1)", 100),
-            new product_model_1.Product(4, "Product 4", "Category 1", "Product 4 (Category 1)", 100),
+            new product_model_1.Product(1, "Product 1", "Category 1", "Desc Product 1 (Category 1)", 1),
+            new product_model_1.Product(2, "Product 2", "Category 1", "Desc Product 2 (Category 1)", 10),
+            new product_model_1.Product(3, "Product 3", "Category 1", "Desc Product 3 (Category 1)", 182),
+            new product_model_1.Product(4, "Product 4", "Category 1", "Product 4 (Category 1)", 1031),
             new product_model_1.Product(5, "Product 5", "Category 1", "Product 5 (Category 1)", 100),
             new product_model_1.Product(6, "Product 6", "Category 2", "Product 6 (Category 2)", 100),
             new product_model_1.Product(7, "Product 7", "Category 2", "Product 7 (Category 2)", 100),

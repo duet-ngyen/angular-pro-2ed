@@ -6,10 +6,10 @@ import "rxjs/add/observable/from";
 @Injectable()
 export class StaticDataSource {
     private products: Product[] = [
-      new Product(1, "Product 1", "Category 1", "Product 1 (Category 1)", 100),
-      new Product(2, "Product 2", "Category 1", "Product 2 (Category 1)", 100),
-      new Product(3, "Product 3", "Category 1", "Product 3 (Category 1)", 100),
-      new Product(4, "Product 4", "Category 1", "Product 4 (Category 1)", 100),
+      new Product(1, "Product 1", "Category 1", "Desc Product 1 (Category 1)", 1),
+      new Product(2, "Product 2", "Category 1", "Desc Product 2 (Category 1)", 10),
+      new Product(3, "Product 3", "Category 1", "Desc Product 3 (Category 1)", 182),
+      new Product(4, "Product 4", "Category 1", "Product 4 (Category 1)", 1031),
       new Product(5, "Product 5", "Category 1", "Product 5 (Category 1)", 100),
       new Product(6, "Product 6", "Category 2", "Product 6 (Category 2)", 100),
       new Product(7, "Product 7", "Category 2", "Product 7 (Category 2)", 100),
