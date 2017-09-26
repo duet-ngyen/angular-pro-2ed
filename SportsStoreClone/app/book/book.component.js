@@ -9,16 +9,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-var AppComponent = (function () {
-    function AppComponent() {
+var BookComponent = (function () {
+    function BookComponent() {
     }
-    AppComponent = __decorate([
+    BookComponent = __decorate([
         core_1.Component({
-            selector: "app",
-            template: "<store></store>"
+            selector: "book",
+            moduleId: module.id,
+            templateUrl: "book.component.html"
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], BookComponent);
+    return BookComponent;
 }());
-exports.AppComponent = AppComponent;
+exports.BookComponent = BookComponent;

@@ -9,16 +9,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-var AppComponent = (function () {
-    function AppComponent() {
+var platform_browser_1 = require("@angular/platform-browser");
+var forms_1 = require("@angular/forms");
+var model_module_1 = require("../model/model.module");
+var book_component_1 = require("./book.component");
+var BookModule = (function () {
+    function BookModule() {
     }
-    AppComponent = __decorate([
-        core_1.Component({
-            selector: "app",
-            template: "<store></store>"
+    BookModule = __decorate([
+        core_1.NgModule({
+            imports: [model_module_1.ModelModule, platform_browser_1.BrowserModule, forms_1.FormsModule],
+            declarations: [book_component_1.BookComponent],
+            exports: [book_component_1.BookComponent]
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], BookModule);
+    return BookModule;
 }());
-exports.AppComponent = AppComponent;
+exports.BookModule = BookModule;
