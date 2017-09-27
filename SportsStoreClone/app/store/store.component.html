@@ -19,3 +19,10 @@
     <div class="card-text p-a-1">{{ item.description }}</div>
   </div>
 </div>
+
+<div class="btn-group pull-xs-right">
+  <button *ngFor="let page of pageNumbers" (click)="changePage(page)"
+    class="btn btn-outline-primary" [class.active]="page == selectedPage">
+    {{page}}
+  </button>
+</div>
