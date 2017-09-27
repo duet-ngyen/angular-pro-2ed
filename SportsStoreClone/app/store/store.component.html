@@ -1,9 +1,19 @@
 <div class="navbar navbar-inverse bg-inverse">
     <a class="navbar-brand">SPORTS STORE</a>
 </div>
-<div class="col-xs-3 bg-info p-a-1">
-    {{categories.length}} Categories
+<div class="col-xs-3 p-a-1">
+  <button class="btn btn-block btn-outline-primary m-b-1">Home</button>
+  <div *ngFor="let category of categories">
+    <button class="btn btn-block btn-outline-primary m-b-1"> {{ category }} </button>
+  </div>
 </div>
-<div class="col-xs-9 bg-success p-a-1">
-    {{products.length}} Products
+<div class="col-xs-9 p-a-1">
+  <div *ngFor="let item of products" class="card card-outline-primary" >
+    <h4 class="card-header"> {{ item.name }}
+      <span class="pull-xs-right tag tag-pill tag-primary">
+        {{ item.price | currency: "EUR":"2.2-2" }}
+      </span>
+    </h4>
+    <div class="card-text p-a-1">{{ item.description }}</div>
+  </div>
 </div>
