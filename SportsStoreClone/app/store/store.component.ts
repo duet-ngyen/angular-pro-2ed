@@ -33,8 +33,12 @@ export class StoreComponent {
     this.selectedPage = newPage;
   }
 
-  get pageNumbers(): number[]{
-    let totalPage = Array(Math.ceil(this.repository.getProducts(this.selectedCategory).length/this.productsPerPage));
-    return totalPage.fill(0).map((x, i) => i + 1);
+  get pageCount():number{
+    return Math.ceil(this.repository.getProducts(this.selectedCategory).length/this.productsPerPage);
   }
+
+  // get pageNumbers(): number[]{
+  //   let totalPage = Array(Math.ceil(this.repository.getProducts(this.selectedCategory).length/this.productsPerPage));
+  //   return totalPage.fill(0).map((x, i) => i + 1);
+  // }
 }

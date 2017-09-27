@@ -39,10 +39,9 @@ var StoreComponent = (function () {
     StoreComponent.prototype.changePage = function (newPage) {
         this.selectedPage = newPage;
     };
-    Object.defineProperty(StoreComponent.prototype, "pageNumbers", {
+    Object.defineProperty(StoreComponent.prototype, "pageCount", {
         get: function () {
-            var totalPage = Array(Math.ceil(this.repository.getProducts(this.selectedCategory).length / this.productsPerPage));
-            return totalPage.fill(0).map(function (x, i) { return i + 1; });
+            return Math.ceil(this.repository.getProducts(this.selectedCategory).length / this.productsPerPage);
         },
         enumerable: true,
         configurable: true
