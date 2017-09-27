@@ -2,9 +2,9 @@
     <a class="navbar-brand">SPORTS STORE</a>
 </div>
 <div class="col-xs-3 p-a-1">
-  <button class="btn btn-block btn-outline-primary m-b-1" (click)="changeCategory()">Home</button>
+  <button class="btn btn-block btn-outline-primary m-b-1" [class.active]="selectedCategory == null" (click)="changeCategory()">Home</button>
   <div *ngFor="let category of categories">
-    <button class="btn btn-block btn-outline-primary m-b-1" (click)="changeCategory(category)">
+    <button class="btn btn-block btn-outline-primary m-b-1" [class.active]="category == selectedCategory" (click)="changeCategory(category)">
       {{ category }}
     </button>
   </div>
