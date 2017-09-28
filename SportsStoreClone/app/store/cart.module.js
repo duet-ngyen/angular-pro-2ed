@@ -9,18 +9,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-var product_repository_1 = require("./product.repository");
-var static_datasource_1 = require("./static.datasource");
+var platform_browser_1 = require("@angular/platform-browser");
+var forms_1 = require("@angular/forms");
+var model_module_1 = require("../model/model.module");
 var cart_model_1 = require("./cart.model");
-var ModelModule = (function () {
-    function ModelModule() {
+var CartModule = (function () {
+    function CartModule() {
     }
-    ModelModule = __decorate([
+    CartModule = __decorate([
         core_1.NgModule({
-            providers: [product_repository_1.ProductRepository, static_datasource_1.StaticDataSource, cart_model_1.Cart]
+            imports: [model_module_1.ModelModule, platform_browser_1.BrowserModule, forms_1.FormsModule],
+            declarations: [cart_model_1.Cart],
+            exports: [cart_model_1.Cart]
         }), 
         __metadata('design:paramtypes', [])
-    ], ModelModule);
-    return ModelModule;
+    ], CartModule);
+    return CartModule;
 }());
-exports.ModelModule = ModelModule;
+exports.CartModule = CartModule;
