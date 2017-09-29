@@ -14,7 +14,8 @@ import { RouterModule } from "@angular/router";
       {path: "store", component: StoreComponent},
       {path: "cart", component: CartDetailComponent},
       {path: "checkout", component: CheckoutComponent},
-      {path: "book", component: BookComponent}
+      {path: "book", component: BookComponent},
+      {path: "**", redirectTo: "/store"}
     ])],
   declarations: [AppComponent],
   bootstrap: [AppComponent]

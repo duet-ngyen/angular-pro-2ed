@@ -27,7 +27,8 @@ var AppModule = (function () {
                     { path: "store", component: store_component_1.StoreComponent },
                     { path: "cart", component: cartDetail_component_1.CartDetailComponent },
                     { path: "checkout", component: checkout_component_1.CheckoutComponent },
-                    { path: "book", component: book_component_1.BookComponent }
+                    { path: "book", component: book_component_1.BookComponent },
+                    { path: "**", redirectTo: "/store" }
                 ])],
             declarations: [app_component_1.AppComponent],
             bootstrap: [app_component_1.AppComponent]
