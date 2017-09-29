@@ -13,6 +13,7 @@ var platform_browser_1 = require("@angular/platform-browser");
 var app_component_1 = require("./app.component");
 var store_module_1 = require("./store/store.module");
 var book_module_1 = require("./book/book.module");
+var book_component_1 = require("./book/book.component");
 var store_component_1 = require("./store/store.component");
 var checkout_component_1 = require("./store/checkout.component");
 var cartDetail_component_1 = require("./store/cartDetail.component");
@@ -26,6 +27,7 @@ var AppModule = (function () {
                     { path: "store", component: store_component_1.StoreComponent },
                     { path: "cart", component: cartDetail_component_1.CartDetailComponent },
                     { path: "checkout", component: checkout_component_1.CheckoutComponent },
+                    { path: "book", component: book_component_1.BookComponent }
                 ])],
             declarations: [app_component_1.AppComponent],
             bootstrap: [app_component_1.AppComponent]
