@@ -13,12 +13,20 @@ var platform_browser_1 = require("@angular/platform-browser");
 var app_component_1 = require("./app.component");
 var store_module_1 = require("./store/store.module");
 var book_module_1 = require("./book/book.module");
+var store_component_1 = require("./store/store.component");
+var checkout_component_1 = require("./store/checkout.component");
+var cartDetail_component_1 = require("./store/cartDetail.component");
+var router_1 = require("@angular/router");
 var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule, store_module_1.StoreModule, book_module_1.BookModule],
+            imports: [platform_browser_1.BrowserModule, store_module_1.StoreModule, book_module_1.BookModule, router_1.RouterModule.forRoot([
+                    { path: "store", component: store_component_1.StoreComponent },
+                    { path: "cart", component: cartDetail_component_1.CartDetailComponent },
+                    { path: "checkout", component: checkout_component_1.CheckoutComponent },
+                ])],
             declarations: [app_component_1.AppComponent],
             bootstrap: [app_component_1.AppComponent]
         }), 
